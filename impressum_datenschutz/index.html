@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scanlary</title>
+  <link rel="stylesheet" href="https://www.scanlary.de/style/style.css">
+  <link rel="icon" href="https://www.scanlary.de/img/logo2.ico">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="https://www.scanlary.de/"><img src="https://www.scanlary.de/img/logo2.png" alt="Icon"></a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="nav">
+      <a href="https://www.scanlary.de/about_me/">Über mich</a>
+      <a href="https://www.scanlary.de/projects/">Projekte</a>
+      <a href="https://www.scanlary.de/contact/">Kontakt</a>
+      <a href="https://www.scanlary.de/dashboard/">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-section">
+      <div class="title">
+        <h1>Impressum und Datenschutz</h1>
+      </div>
+    </section>
+    <section class="main-section alt-section">
+        <h2>Impressum</h2>
+        <p>Diese Webseite und keine der weiteren mit mir in Verbindung stehenden Services sind nicht kommerziell ausgerichtet. Sie dienen ausschließlich der privaten, nicht-geschäftsmäßigen Nutzung und dem Austausch über persönliche Interessen. Es werden keine Produkte oder Dienstleistungen verkauft oder beworben, keine Einnahmen erzielt und keine Daten zu kommerziellen Zwecken ausgewertet. Gemäß § 5 TMG besteht für rein private Webseiten keine Impressumspflicht. Sollte sich dies in Zukunft ändern, wird ein vollständiges Impressum umgehend nachgereicht. Verantwortlich für den Inhalt gemäß § 55 Abs. 1 RStV:<br>Niels Wege<br>E-Mail: <a href="mailto:scan14@t-online.de">scan14@t-online.de</a><br>Bitte beachte: Bei Fragen oder Anliegen zur Webseite kannst du mich gerne über die oben genannte E-Mail-Adresse kontaktieren.</p>
+    </section>
+    <section class="main-section">
+        <h2>Datenschutzerklärung</h2>
+        <p>Diese Webseite dient ausschließlich der privaten Nutzung und verfolgt keinerlei kommerzielle Interessen. Es werden keine personenbezogenen Daten erhoben, gespeichert oder verarbeitet.<br> • Es werden keine Cookies gesetzt.<br> • Es findet keine Analyse des Nutzerverhaltens statt.<br> • Es werden keine Tracking- oder Statistikdienste wie Google Analytics verwendet.<br> • Es gibt kein Kontaktformular und keine Kommentarfunktion.<br> • Eine Weitergabe von Daten an Dritte erfolgt nicht, da keine Daten erhoben werden.<br>Sollte sich an dieser Praxis in Zukunft etwas ändern, wird diese Datenschutzerklärung entsprechend angepasst. Bei Fragen zum Datenschutz auf dieser Seite kannst du dich gerne per E-Mail melden:<br><a href="mailto:scan14@t-online.de">scan14@t-online.de</a></p>
+    </section>
+    <section class="main-section alt-section">
+        <h2>Zur Einbindung von Drittanbieterinhalten</h2>
+        <p><h3>Einbindung von YouTube- und Instagram-Inhalten</h3><br>Auf dieser Webseite sind Inhalte von Drittanbietern eingebunden, konkret von YouTube (Google LLC) und Instagram (Meta Platforms Ireland Limited). Beim Aufruf einer Seite mit eingebetteten Inhalten dieser Anbieter kann eine Verbindung zu deren Servern hergestellt werden. Dabei wird mindestens die IP-Adresse des Besuchers übermittelt, möglicherweise auch weitere technische Informationen (z.B. verwendeter Browser, Betriebssystem, Bildschirmauflösung). Diese Daten können von den jeweiligen Diensten zur Erstellung von Nutzungsprofilen verwendet werden.<br><h3>YouTube</h3><br>Die Einbindung von YouTube-Videos erfolgt im sogenannten „erweiterten Datenschutzmodus“. Das bedeutet, dass YouTube keine Cookies zur Analyse des Nutzungsverhaltens setzt, solange das Video nicht aktiv abgespielt wird. Erst mit dem Klick auf das Video wird eine Verbindung zu den Servern von YouTube aufgebaut. Betreiber ist:<br>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.<br>Weitere Informationen zum Datenschutz bei YouTube findest du unter:<br><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br><h3>Instagram</h3><br>Einbindung von Instagram-Inhalten (z.B. Posts oder Reels) kann dazu führen, dass personenbezogene Daten (wie IP-Adresse oder Browserdaten) an Meta Platforms Ireland Limited übertragen werden. Auch hier erfolgt dies unabhängig davon, ob der Besucher ein eigenes Instagram-Konto besitzt oder eingeloggt ist.<br>Betreiber ist:<br>Meta Platforms Ireland Ltd., 4 Grand Canal Square, Dublin 2, Irland.<br>Datenschutzerklärung:<br><a href="https://privacycenter.instagram.com/policy">https://privacycenter.instagram.com/policy</a><br><h3>Rechtsgrundlage</h3><br>Die Einbindung dieser Inhalte erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO – dem berechtigten Interesse an einer ansprechenden und informativen Darstellung dieser Webseite. Besucher können selbst entscheiden, ob sie Inhalte durch einen Klick aktivieren und damit die Übertragung von Daten ermöglichen.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Niels Wege. Alle Rechte vorbehalten. <a href="https://www.scanlary.de/impressum_datenschutz/">Impressum und Datenschutz</a>
+  </footer>
+
+  <script>
+    function toggleMenu(toggleBtn) {
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('active');
+      toggleBtn.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

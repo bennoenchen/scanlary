@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'TT Fors Black';
+    src: url('TT Fors Trial Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Fors Regular';
+    src: url('TT Fors Trial Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'TT Fors Regular', sans-serif;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #3f3f3f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 48px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+a {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00bcd4;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    justify-content: space-between;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.main-section {
+    padding: 4rem 2rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.alt-section:nth-child(even) {
+    background-color: #2f2f2f;
+}
+
+
+h1 {
+    color: #006aff;
+    font-size: 64px;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.title {
+    font-family: 'TT Fors Black', sans-serif;
+    max-width: 100%;
+}
+
+.link-images {
+    width: 100%;
+}
+
+.link-images img {
+    width: 10%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio = 9/16 = 0.5625 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.insta-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.insta-row blockquote.instagram-media {
+    flex: 1 1 300px;
+    max-width: 540px;
+}
+
+footer {
+    background-color: #3f3f3f;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    nav {
+    flex-direction: column;
+    background-color: #2a2a2a;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0;
+    box-sizing: border-box;
+    transform: translateY(-20px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    nav.active {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    }
+
+    nav a {
+    padding: 1rem 2rem;
+    border-top: 1px solid #444;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+    .menu-toggle {
+    display: flex;
+    }
+
+    h1 {
+    font-size: 48px;
+    }
+
+    .title {
+    text-align: center;
+    }
+
+    .link-images img {
+    width: 18%
+    }
+}

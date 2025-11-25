@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scanlary</title>
+  <link rel="stylesheet" href="https://www.scanlary.de/style/style.css">
+  <link rel="icon" href="https://www.scanlary.de/img/logo2.ico">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="https://www.scanlary.de/"><img src="https://www.scanlary.de/img/logo2.png" alt="Icon"></a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="nav">
+      <a href="https://www.scanlary.de/about_me/">Über mich</a>
+      <a href="https://www.scanlary.de/projects/">Projekte</a>
+      <a href="https://www.scanlary.de/contact/">Kontakt</a>
+      <a href="https://www.scanlary.de/dashboard/">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-section">
+      <div class="title">
+        <h1>Über mich</h1>
+        <p>Wer bin ich, und was macht mich denn eigentlich aus?</p>
+      </div>
+    </section>
+    <section class="main-section alt-section">
+        <p>Hier müsstest du etwas über dich schreiben</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Niels Wege. Alle Rechte vorbehalten. <a href="https://www.scanlary.de/impressum_datenschutz/">Impressum und Datenschutz</a>
+  </footer>
+
+  <script>
+    function toggleMenu(toggleBtn) {
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('active');
+      toggleBtn.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
