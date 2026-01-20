@@ -4,91 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scanlary</title>
-  <link rel="stylesheet" href="https://www.scanlary.de/style/style.css">
-  <link rel="icon" href="https://www.scanlary.de/img/logo.ico">
-  <style>
-    .dashboard {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 2rem;
-    }
-
-    .card {
-      display: flex;
-      background-color: #8e8e8e;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    .card img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      margin: 16px;
-      border-radius: 8px;
-      flex-shrink: 0;
-    }
-
-    .card-text {
-      padding: 16px 16px 16px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .card-text h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.1rem;
-      color:white;
-    }
-
-    .card-text p {
-      margin: 0;
-      color: #444;
-      font-size: 0.95rem;
-    }
-
-    .button {
-      background-color:transparent;
-      border:none;
-      all:unset;
-    }
-
-    /* Responsive Anpassung */
-    @media (max-width: 768px) {
-      .card {
-        flex-direction: row;
-      }
-
-      .dashboard {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-      }
-
-      .card img {
-        margin: 12px;
-        width: 64px;
-        height: 64px;
-      }
-
-      .card-text {
-        padding: 12px 12px 12px 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/dashboard.css">
+  <link rel="icon" href="/img/logo.ico">
 </head>
 <body>
   <header>
     <div class="logo">
-        <a href="https://www.scanlary.de/"><img src="https://www.scanlary.de/img/logo2.png" alt="Icon"></a>
+        <a href="/"><img src="/img/logo2.png" alt="Icon"></a>
     </div>
     <div class="menu-toggle" onclick="toggleMenu(this)">
       <span></span>
@@ -96,24 +19,24 @@
       <span></span>
     </div>
     <nav id="nav">
-      <a href="https://www.scanlary.de/about_me/">Über mich</a>
-      <a href="https://www.scanlary.de/projects/">Projekte</a>
-      <a href="https://www.scanlary.de/contact/">Kontakt</a>
-      <a href="https://www.scanlary.de/dashboard/">Dashboard</a>
+      <a href="/about_me/">Über mich</a>
+      <a href="/projects/">Projekte</a>
+      <a href="/contact/">Kontakt</a>
+      <a href="/dashboard/">Dashboard</a>
     </nav>
   </header>
   <main>
     <section class="main-section">
       <div class="title">
         <h1>Dashboard</h1>
-        <p>Folgende Dienste werden von Benno Mattis Biethan unter <a href="www.bennoenchen.de">bennoenchen.de</a> betrieben.</p>
+        <p>Folgende Dienste werden von Benno Mattis Biethan unter <a href="https://www.bennoenchen.de/">bennoenchen.de</a> betrieben.</p>
       </div>
     </section>
     <section class="main-section alt-section">
       <div class="dashboard">
         <a href="https://bitwarden.bennoenchen.de/">
         <div class="card">
-          <img src="https://www.bennoenchen.de/img/bitwarden.jpg" alt="Bitwarden">
+          <img src="/img/bitwarden.jpg" alt="Bitwarden">
           <div class="card-text">
             <h3>Bitwarden</h3>
             <p>Der vertrauenswürdige Passwortmanager</p>
@@ -122,7 +45,7 @@
         </a>
         <a href="https://jellyfin.bennoenchen.de/">
         <div class="card">
-          <img src="https://www.bennoenchen.de/img/jellyfin.png" alt="Jellyfin">
+          <img src="/img/jellyfin.png" alt="Jellyfin">
           <div class="card-text">
             <h3>Jellyfin</h3>
             <p>Der beste Streaming service ever</p>
@@ -131,7 +54,7 @@
         </a>
         <a href="https://photoprism.bennoenchen.de/">
         <div class="card">
-          <img src="https://www.bennoenchen.de/img/photoprism.png" alt="Photoprism">
+          <img src="/img/photoprism.png" alt="Photoprism">
           <div class="card-text">
             <h3>Photoprism</h3>
             <p>Eine Photobibliothek</p>
@@ -140,7 +63,7 @@
         </a>
         <a href="https://nextcloud.bennoenchen.de/">
         <div class="card">
-          <img src="https://www.bennoenchen.de/img/nextcloud.png" alt="Portainer">
+          <img src="/img/nextcloud.png" alt="Portainer">
           <div class="card-text">
             <h3>Nextcloud</h3>
             <p>Der Cloudspeicher für Ihre daten</p>
@@ -149,7 +72,7 @@
         </a>
         <a href="https://panel.bennoenchen.de/">
         <div class="card">
-          <img src="https://www.bennoenchen.de/img/pterodactyl.png" alt="Pterodactyl">
+          <img src="/img/pterodactyl.png" alt="Pterodactyl">
           <div class="card-text">
             <h3>Pterodactyl panel</h3>
             <p>Ein panel für gameserver</p>
@@ -158,7 +81,7 @@
         </a>
         <button class="button" onclick="navigator.clipboard.writeText('minecraft.bennoenchen.de')">
         <div class="card">
-          <img src="https://www.bennoenchen.de/img/minecraft.jpg" alt="Minecraft">
+          <img src="/img/minecraft.jpg" alt="Minecraft">
           <div class="card-text">
             <h3>Minecraft Server</h3>
             <p>Klicken um in die Zwischenablage zu kopieren</p>
@@ -167,7 +90,7 @@
         </button>
         <a href="https://uptime.bennoenchen.de/status/uptime/">
         <div class="card">
-          <img src="https://www.bennoenchen.de/img/uptime-kuma.png" alt="Uptime Kuma">
+          <img src="/img/uptime-kuma.png" alt="Uptime Kuma">
           <div class="card-text">
             <h3>Kuma Uptime</h3>
             <p>Eins Statusseite aller bennoenchen.de-Services</p>
@@ -176,7 +99,7 @@
         </a>
         <a href="https://portainer.bennoenchen.de/">
         <div class="card">
-          <img src="https://www.bennoenchen.de/img/portainer.png" alt="Portainer">
+          <img src="/img/portainer.png" alt="Portainer">
           <div class="card-text">
             <h3>Portainer</h3>
             <p>Für den Admin: ein container management system</p>
@@ -188,15 +111,9 @@
   </main>
   
   <footer>
-    &copy; 2025 Niels Wege. Alle Rechte vorbehalten. <a href="https://www.scanlary.de/impressum_datenschutz/">Impressum und Datenschutz</a>
+    &copy; 2026 Scanlary · Inhalte lizenziert unter CC BY-NC-SA 4.0<br>&copy; 2026 Bennoenchen · Website-Quellcode lizensiert unter GPL-3.0-or-later<br><a href="/impressum_datenschutz/">Impressum und Datenschutz</a>
   </footer>
 
-  <script>
-    function toggleMenu(toggleBtn) {
-      const nav = document.getElementById('nav');
-      nav.classList.toggle('active');
-      toggleBtn.classList.toggle('open');
-    }
-  </script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
