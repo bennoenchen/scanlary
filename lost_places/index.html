@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scanlary</title>
   <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/lost_places.css">
   <link rel="icon" href="/img/logo.ico">
 </head>
 <body>
@@ -29,34 +30,20 @@
   <main>
     <section class="main-section">
       <div class="title">
-        <h1>Projekte</h1>
-        <p>Hier findet ihr alle Infos zu allen Projekten über die Jahre</p>
+        <h1>Lost places</h1>
+        <p>Hier findet ihr eine Sammlung von Lost place Fotografien</p>
       </div>
     </section>
     <section class="main-section alt-section">
-        <h2>Projekt 1</h2>
-        <p>Hier stehen informationen zu deinen Projekten</p>
+        <h2>Fotosammlung</h2>
+        <div class="slideshow" id="lostPlacesSlideshow" data-path="/img/lost_places/" data-start="1" data-end="89">
+            <button class="slide-btn prev" type="button" aria-label="Vorheriges Bild">‹</button>
+            <img class="slide-img" alt="Lost-Place-Foto">
+            <button class="slide-btn next" type="button" aria-label="Nächstes Bild">›</button>
+        </div>
+        <p class="slideshow-caption" id="slideshowCaption"></p>
     </section>
-    <section class="main-section">
-        <h2>Projekt 2</h2>
-        <p>Hier stehen informationen zu deinen Projekten</p>
-    </section>
-    <section class="main-section alt-section">
-      <h2>Projekt 3</h2>
-      <p>Hier stehen informationen zu deinen Projekten</p>
-    </section>
-    <section class="main-section">
-        <h2>Projekt 4</h2>
-        <p>Hier stehen informationen zu deinen Projekten</p>
-    </section>
-    <section class="main-section alt-section">
-        <h2>Projekt 5</h2>
-        <p>Hier stehen informationen zu deinen Projekten</p>
-    </section>
-    <section class="main-section">
-        <h2>Projekt 6</h2>
-        <p>Hier stehen informationen zu deinen Projekten</p>
-    </section>
+    
   </main>
 
   <footer>
@@ -64,5 +51,6 @@
   </footer>
 
   <script src="/js/script.js"></script>
+  <script src="/js/lost_places.js"></script>
 </body>
 </html>
