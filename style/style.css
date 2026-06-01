@@ -1,14 +1,7 @@
-@font-face {
-    font-family: 'TT Fors Black';
-    src: url('TT Fors Trial Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Fors Regular';
-    src: url('TT Fors Trial Regular.ttf') format('truetype');
-    font-weight: normal;
+.montserrat-light {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -20,7 +13,10 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: 'TT Fors Regular', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
     background-color: #1f1f1f;
     color: #ffffff;
 }
@@ -129,7 +125,10 @@ h1 {
 }
 
 .title {
-    font-family: 'TT Fors Black', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
     max-width: 100%;
 }
 
