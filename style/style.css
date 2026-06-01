@@ -73,7 +73,6 @@ nav a.active {
     background-color: rgba(0, 188, 212, 0.12);
 }
 
-/* Hamburger */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -108,7 +107,6 @@ nav a.active {
     transform: translateY(-8.75px) rotate(-45deg);
 }
 
-/* Backdrop */
 .nav-backdrop {
     display: none;
     position: fixed;
@@ -124,7 +122,6 @@ nav a.active {
     opacity: 1;
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -222,7 +219,7 @@ h1 {
 .video-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio = 9/16 = 0.5625 */
+    padding-top: 56.25%;
     height: 0;
     overflow: hidden;
 }
