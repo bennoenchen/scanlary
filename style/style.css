@@ -21,7 +21,15 @@ body {
     color: #ffffff;
 }
 
-/* ===== HEADER & NAV ===== */
+a {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00bcd4;
+}
+
 header {
     position: sticky;
     top: 0;
