@@ -195,10 +195,11 @@ main {
 
 h1 {
     font-weight: 900;
-    color: #006aff;
-    font-size: 64px;
+    color: #fe0000;
+    font-size: clamp(2rem, 10vw, 64px);
     margin-bottom: 1rem;
     max-width: 100%;
+    word-break: break-word;
 }
 
 .title {
