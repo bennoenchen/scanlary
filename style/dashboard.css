@@ -12,6 +12,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    height: 100%;
 }
 
 .card:hover {
@@ -47,10 +49,10 @@
     font-size: 0.95rem;
 }
 
-.button {
-    background-color: transparent;
-    border: none;
+.cardbutton {
     all: unset;
+    display: flex;
+    cursor: pointer;
 }
 
 /* Responsive Anpassung */
