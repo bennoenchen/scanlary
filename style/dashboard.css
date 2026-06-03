@@ -7,7 +7,7 @@
 
 .card {
     display: flex;
-    background-color: #8e8e8e;
+    background-color: var(--card-background);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     overflow: hidden;
@@ -38,19 +38,19 @@
 .card-text h3 {
     margin: 0 0 0.5rem;
     font-size: 1.1rem;
-    color:white;
+    color: var(--text);
 }
 
 .card-text p {
     margin: 0;
-    color: #444;
+    color: var(--text-darker);
     font-size: 0.95rem;
 }
 
 .button {
-    background-color:transparent;
-    border:none;
-    all:unset;
+    background-color: transparent;
+    border: none;
+    all: unset;
 }
 
 /* Responsive Anpassung */

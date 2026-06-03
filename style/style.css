@@ -1,12 +1,14 @@
 :root {
     --theme: #006aff;
     --bg: #1f1f1f;
-    --bg-lighter: #3f3f3f;
     --bg-light: #2f2f2f;
+    --bg-lighter: #3f3f3f;
     --highlight: #00bcd4;
     --text: #ffffff;
-    --text-darker: #aaaaaa;
+    --text-dark: #aaaaaa;
+    --text-darker: #444444;
     --link: #8d8d8d;
+    --card-background: #8e8e8e;
 }
 
 html, body {
@@ -270,5 +272,5 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    color: var(--text-darker);
+    color: var(--text-dark);
 }
