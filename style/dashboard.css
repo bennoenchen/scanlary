@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 2rem;
+    justify-content: start; /* NEU: Grid selbst linksbündig, keine Streckung */
 }
 
 .card {
@@ -47,10 +48,10 @@
     font-size: 0.95rem;
 }
 
-.button {
-    background-color: transparent;
-    border: none;
+.cardbutton {
     all: unset;
+    display: flex;
+    cursor: pointer;
 }
 
 /* Responsive Anpassung */
